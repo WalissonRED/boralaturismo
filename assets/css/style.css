@@ -1,0 +1,660 @@
+@charset "utf-8";
+
+body{
+	font-family:"Montserrat Regular";
+}
+
+header{
+	height:100vh;
+}
+
+a{
+	cursor:pointer !important;
+}
+
+/* MENU DO TOPO */
+
+a.nav-link{
+	color:#FFF;
+	font-size:14px;
+	text-transform:uppercase;
+	transition:0.3s;
+}
+
+a.nav-link:hover, a.active{
+	background-color:#FFF;
+	color:#000;
+}
+
+.navbar-toggler{
+	color:#FFF;
+}
+
+.navbar-brand img{
+	width:200px;
+	transition:0.3s !important;
+}
+
+.brand-expand img{
+	transition:0.3s !important;
+}
+
+.bg{
+	background-color:transparent;
+}
+
+.down{
+	background-color:#FFF;
+	box-shadow:1px 1px 10px #DDD;
+}
+
+.navbar-toggler{}
+.down .navbar-toggler{
+	color:#354a83;
+}
+
+.down a.nav-link{
+	color:#354a83;
+	font-size:14px;
+	text-transform:uppercase;
+	transition:0.3s;
+}
+
+.down a.nav-link:hover, .down a.active{
+	background-color:#354a83;
+	color:#FFF;
+}
+
+.transition{    
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* FIM DO MENU DO TOPO */
+
+.carousel-op{
+	background-color:#000;
+	width:100%;
+	height:100%;
+	position: absolute;
+	opacity:0.4;
+}
+
+.carousel-text{
+	width:100%;
+	height:100%;
+	color:#FFF;
+	position:absolute;
+}
+
+.carousel-text .container{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+}
+
+.carousel-text .container h1{
+	font-size:70px;
+	font-family:"Montserrat ExtraBold";
+	text-align:center;
+}
+
+.carousel-text .container p{
+	text-align:center;
+}
+
+.carousel-inner .carousel-item img{
+	height:100vh;
+	min-width:100%;
+}
+
+.titulo{
+	display:flex;
+	flex-direction:column;
+	font-size:36px;
+	font-family:"Montserrat ExtraBold";
+	color:#303030;
+	border-left:10px solid #3798cb;
+	padding:0 20px;
+	margin:40px 0;
+}
+
+.historia{
+	display:flex;
+	align-items:center;
+}
+
+.historia-img{
+	margin-right:40px;
+}
+
+.historia-img img{
+	width:200px;
+	height:200px;
+}
+
+.historia-texto{
+	/*text-align:justify;*/
+	color:#999;
+}
+
+.box-conteudo{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	height:100%;
+	margin-top:40px;
+	border-top:10px solid #3798cb;
+	border-radius:100px;
+	padding:0 20px;
+}
+
+.bc-row-1{
+	display:flex;
+	justify-content:center;
+}
+
+.bc-row-1 i{
+	height:80px;
+	width: 80px;
+	font-size:40px;
+	border:5px solid #3798cb;
+	border-radius:120px;
+	background-color:#fff;
+	color:#3798cb;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	/*box-shadow:1px 1px 10px #DDD;*/
+	position:absolute;
+}
+
+.bc-row-2{
+	padding:40px 0 10px;
+	text-transform:uppercase;
+	font-family:"Montserrat ExtraBold";
+	font-size:18px;
+	width:100%;
+	text-align:center;
+}
+
+.bc-row-3{
+	color:#999;
+	padding:10px 0;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.bc-row-3 ul{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:0;
+}
+
+.box-row{
+	border-left:1px solid #DDD;
+	border-right:1px solid #DDD;
+	
+}
+
+.p-texto{
+	color:#999;
+	text-align:center;
+	margin-top:20px;
+}
+
+.eqp-box{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-top:20px;
+}
+
+.equipe-foto{
+	overflow:hidden;
+	width:250px;
+	height:250px;
+	border-radius:500px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	box-shadow:1px 1px 10px #DDD;
+}
+
+.equipe-foto img{
+	width:250px;
+	min-height:100%;
+}
+
+.equipe-nome{
+	color:#303030;
+	font-family:"Montserrat ExtraBold";
+	font-size:18px;
+	margin-top:10px;
+}
+
+.equipe-funcao{
+	color:#999;
+	margin-bottom:20px;
+}
+
+/* GALERIA DE FOTOS */
+
+.galeria-opacidade{
+	padding-right:30px;
+	opacity:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	transition:0.3s;
+}
+
+.galeria-opacidade:hover{
+	opacity:0.4;
+	transition:0.3s;
+}
+
+.opacidade{
+	background-color:#000;	
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.opacidade i{
+	color:#FFF;
+	opacity:inherit;
+}
+
+.box-img{
+	overflow:hidden;
+	height:250px;
+}
+
+.box-img img{
+	width:100%;
+}
+
+/* FIM DA GALERIA DE FOTOS */
+
+a.btn-galeria{
+	background-color:#3798cb;
+	padding:15px 30px;
+	text-decoration:none;
+	color:#FFF;
+	text-transform:uppercase;
+	border-radius:100px;
+	border:2px solid #3798cb;
+	transition:0.3s;
+	font-family:"Montserrat ExtraBold";
+}
+
+a.btn-galeria:hover{
+	transition:0.3s;
+	color:#3798cb;
+	background-color:#FFF;
+}
+
+a.btn-slide{
+	background-color:#3798cb;
+	padding:15px 30px;
+	text-decoration:none;
+	color:#FFF;
+	text-transform:uppercase;
+	border-radius:100px;
+	border:2px solid #3798cb;
+	transition:0.3s;
+	font-family:"Montserrat ExtraBold";
+}
+
+a.btn-slide:hover{
+	transition:0.3s;
+	color:#FFF;
+	background-color:transparent;
+	border:2px solid #FFF;
+}
+
+.depoimto-content{
+	width:100%;
+	border:1px solid #DDD;
+	padding:20px;
+	color:#303030;
+	border-radius:5px;
+}
+
+.dc-header{
+	font-family:"Montserrat ExtraBold";
+	text-transform:uppercase;
+	border-left:10px solid #3798cb;
+	padding-left:20px;
+}
+
+.dch-stars{
+	color:#3798cb;
+}
+
+.dc-body{
+	padding-top:10px;
+	color:#909090;
+}
+
+.carousel-indicators-slide{
+	position:relative;
+}
+
+.carousel-indicators-slide li{
+	background-color:#000;
+	opacity:0.4;
+}
+
+.carousel-indicators-slide li.active{
+	background-color:#000;
+	opacity:0.5;
+}
+
+/* DESTINOS */
+
+.box-dest{
+	width:100%;
+	border:1px solid #DDD;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+.box-dest .dest-img i{
+	top:0;
+	margin-top:20px;
+	margin-left:20px;
+	position:absolute;
+	/*color:#3798cb;*/
+	color:#FFF;
+	box-shadow:1px 1px 10px #000;
+	background-color:#FFF;
+	color:#3798cb;
+	font-size:20px;
+	width:40px;
+	height:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:80px;
+}
+
+.box-dest .dest-img img{
+	width:100%;
+	height:250px;
+}
+
+.box-dest .dest-desc{
+	padding:20px;
+}
+
+.box-dest .dest-desc .dd-titulo{
+	font-family:"Montserrat ExtraBold";
+	text-transform:uppercase;
+	font-size:20px;
+	color:#303030;
+	font-weight:bold;
+	border-left:10px solid #3798cb;
+	padding:0 10px;
+}
+
+.box-dest .dest-desc .dd-desc{
+	color:#999;
+	margin:10px 0;
+	/*text-align:justify;*/
+}
+
+.box-dest .dest-desc .dd-price{
+	font-family:"Montserrat ExtraBold";
+	margin-bottom:10px;
+	font-size:20px;
+	color:#303030;
+	display:flex;
+	align-items:center;
+}
+
+.box-dest .dest-desc .dd-price i{
+	width:40px;
+	height:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#3798cb;
+	margin:0 10px;
+	color:#FFF;
+	border-radius:10000px;
+}
+
+.box-dest .dest-desc a{
+	text-decoration:none;
+	font-family:"Montserrat ExtraBold";
+	color:#3798cb;
+	transition:0.3s;
+}
+
+.box-dest .dest-desc a:hover{
+	margin-left:10px;
+	transition:0.3s;
+	color:#354a83;
+}
+
+/* FIM DESTINOS */
+
+.social a{
+	display:flex;
+	align-items:center;
+	text-decoration:none;
+	font-size:18px;
+	font-family:"Montserrat ExtraBold";
+	color:#BBB;
+	border:2px solid #BBB;
+	transition:0.3s;
+	margin-bottom:5%;
+	width:100%;
+	overflow: hidden;
+}
+
+.social a i{
+	width:72px;
+	padding:18px 0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#BBB;
+	border-right:2px solid #BBB;
+	margin-right:20px;
+	transition:0.3s;
+}
+
+.social-wpp:hover{
+	border:2px solid #006400;
+	color:#006400;
+	transition:0.3s;
+}
+
+.social-wpp:hover i{
+	background-color:#006400;
+	color:#FFF;
+	border-right:2px solid #006400;
+	transition:0.3s;
+}
+
+.social-insta:hover{
+	border:2px solid #c3029d;
+	color:#c3029d;
+	transition:0.3s;
+}
+
+.social-insta:hover i{
+	background-color:#c3029d;
+	color:#FFF;
+	border-right:2px solid #c3029d;
+	transition:0.3s;
+}
+
+.social-email:hover{
+	border:2px solid #3798cb;
+	color:#3798cb;
+	transition:0.3s;
+}
+
+.social-email:hover i{
+	background-color:#3798cb;
+	color:#FFF;
+	border-right:2px solid #3798cb;
+	transition:0.3s;
+}
+
+.social-time:hover{
+	border:2px solid #354a83;
+	color:#354a83;
+	transition:0.3s;
+}
+
+.social-time:hover i{
+	background-color:#354a83;
+	color:#FFF;
+	border-right:2px solid #354a83;
+	transition:0.3s;
+}
+
+footer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	transition: 0.3s;
+}
+
+footer a{
+	font-family:Verdana;
+	font-weight: bolder;
+	text-transform:uppercase;
+	font-size:10px;
+	background-color:#303030;
+	color:#FFF;
+	padding:5px 10px;
+	border-radius:5px;
+	text-decoration: none;
+	transition: 0.3s;
+	margin:10px 0;
+}
+
+footer a:hover{
+	color:#FFF;
+	transition: 0.3s;
+	text-decoration: none;
+	background-color:#444;
+}
+
+
+/* BOTÃO DE VOLTAR PARA O TOPO */
+
+.smoothscroll-top{
+	position:fixed;
+	opacity:0;
+	visibility:hidden;
+	overflow:hidden;
+	text-align:center;
+	z-index:99;
+	color:#3798cb;
+	right:25px;
+	bottom:-25px;
+	transition:all 0.3s ease-in-out;
+	box-shadow:0 0 0 0;
+}
+
+.smoothscroll-top:hover {
+	color:#354a83;
+	transition:all 0.3s ease-in-out;
+}
+
+.smoothscroll-top.show {
+	visibility:visible;
+	cursor:pointer;
+	opacity:1;
+	bottom:25px;
+}
+
+.credit-photos{
+	color:#999;
+	text-align:center;
+	font-size:16px;
+	padding:20px 0;
+}
+
+.credit-photos a{
+	text-decoration:none;
+	color:#777;
+	font-family:"Montserrat ExtraBold";
+	transition:0.3s;
+}
+
+.credit-photos a:hover{
+	color:#444;
+	transition:0.3s;
+	
+}
+
+/* FIM BOTÃO DE VOLTAR PARA O TOPO */
+
+@font-face{
+	src:url("../font/Montserrat-Regular.ttf");
+	font-family:"Montserrat Regular";
+}
+
+@font-face{
+	src:url("../font/Montserrat-ExtraBold.ttf");
+	font-family:"Montserrat ExtraBold";
+}
+
+@media(max-width:991px){
+	.m-top-991{
+		margin-top:20px;
+	}
+	
+	a.nav-link{
+		padding-left:10px !important;
+	}
+	
+	.historia{
+		flex-direction:column;
+	}
+	
+	.historia-img{
+		margin-bottom:40px;
+	}
+	
+	.social{
+		flex-direction:column;
+	}
+
+	.social a{
+		margin-bottom:2.5%;
+		width:100%;
+	}
+	
+	.navbar-toggler{
+		display:none !important;
+	}
+	
+	.down .navbar-toggler{
+		display:block !important;
+	}
+}
+
+@media(max-width:460px){
+	.social-email{
+		display:none !important;
+	}
+}

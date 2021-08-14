@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+nav{
+	box-shadow:1px 1px 10px #DDD !important;
+	background-color:#FFF !important;
+}
+
+a.nav-link{
+	color:#354a83 !important;
+	display:flex;
+	align-items:center;
+}
+
+a.nav-link i{
+	margin-right:10px;
+}
+
+a.nav-link:hover{
+	background-color:#354a83;
+	color:#FFF !important;
+}
+
+.navbar-toggler{
+	color:#354a83 !important;
+}
+
+main{
+	margin-top:120px;
+}
